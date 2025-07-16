@@ -217,7 +217,7 @@ export default function Consultants() {
               onClick={() => setShowBookingForm(true)}
               className="w-full py-3 bg-white text-green-600 rounded-xl font-medium !rounded-button"
             >
-              Book Now - It's Free!
+              Book Now - It&aposs Free!
             </button>
           </div>
         </div>
