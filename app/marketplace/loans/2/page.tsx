@@ -164,7 +164,7 @@ export default function StudyLoanDetails() {
                   <i className="ri-information-line text-blue-600 mt-1"></i>
                   <div>
                     <h4 className="font-medium text-blue-800 text-sm">Important Note</h4>
-                    <p className="text-blue-600 text-xs mt-1">Meeting eligibility criteria doesn't guarantee loan approval. Final approval depends on credit assessment and document verification.</p>
+                    <p className="text-blue-600 text-xs mt-1">Meeting eligibility criteria doesn&apost guarantee loan approval. Final approval depends on credit assessment and document verification.</p>
                   </div>
                 </div>
               </div>
