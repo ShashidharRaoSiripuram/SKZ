@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
+    "start": "next start -p $PORT",  // ← Added this line
     "lint": "next lint"
   },
   "dependencies": {
@@ -26,5 +27,8 @@
     "postcss": "^8.5.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": "18.x"  // ← Added Node.js version requirement
   }
 }
