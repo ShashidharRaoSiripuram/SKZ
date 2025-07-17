@@ -1,11 +1,13 @@
 // app/marketplace/accommodation/[id]/page.tsx
 import { Metadata } from 'next';
+import { type DynamicParams } from 'next/types';
 
-type PageProps = {
+// Use the built-in types from Next.js
+interface PageProps {
   params: {
     id: string;
   };
-};
+}
 
 export default function AccommodationDetailPage({ params }: PageProps) {
   const { id } = params;
@@ -20,17 +22,12 @@ export default function AccommodationDetailPage({ params }: PageProps) {
   );
 }
 
-// Use a separate inline type for generateMetadata to avoid type conflicts
-export async function generateMetadata({
-  params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   return {
     title: `Accommodation ${params.id}`,
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<DynamicParams> {
   return [{ id: '4' }]; // Add more static IDs if needed
 }
